@@ -8,7 +8,7 @@ Siente libre de tratarlo como una ayuda personal para el master, director de jue
 
 Tecnológicamente todo está hecho con HTML, JavaScript y CSS. Yo no soy un experto en ninguna de las tres por eso la he recopilado de stackoverflow y otros foros similares.
 
-Todo lo que aquí se contiene está bajo la licencia CC BY-NC-SA de Creativ Commons, esto es:*Esta licencia permite a otros entremezclar, ajustar y construir a partir de esta obra con fines no comerciales, siempre y cuando se reconozcan la autoría y sus nuevas creaciones estén bajo una licencia con los mismos términos.*
+Todo lo que aquí se contiene está bajo la licencia **CC BY-NC-SA de Creativ Commons**, esto es:*Esta licencia permite a otros entremezclar, ajustar y construir a partir de esta obra con fines no comerciales, siempre y cuando se reconozcan la autoría y sus nuevas creaciones estén bajo una licencia con los mismos términos.*
 
 ## Lo primero es crear un diagrama para cada escena
 
@@ -30,7 +30,7 @@ Yo he usado GIMP para medir los puntos de cada elemento del diagrama y así aña
 
 **NOTA:** recuerda que cada línea debe terminar en una "," menos la última entrada que no la lleva.
 
-2. **directorio donde se buscaran las hojas html para cada punto**
+2. **Directorio donde se buscaran las hojas html para cada punto**
 ```
 var href = "e1/";
 ```
