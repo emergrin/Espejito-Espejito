@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Espejito Espejito: Escena 2</title>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<link href="demo2.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript">
+var puntos = [
+  { x: 2, y: 96, z: 98, f: 174, id: "facetoface.html"},
+  { x: 189, y: 2, z: 248, f: 76, id: "descubrir.html"},
+  { x: 171, y: 96, z: 226, f: 174, id: "examen.html"},
+  { x: 158, y: 189, z: 216, f: 264, id: "loco.html"},
+  { x: 324, y: 96, z: 428, f: 170, id: "deberes.html"},
+  { x: 458, y: 96, z: 554, f: 170, id: "preparar.html"},
+  { x: 592, y: 96, z: 684, f: 170, id: "boda.html"},
+  { x: 738, y: 96, z: 837, f: 170, id: "cosas.html"},
+  { x: 798, y: 192, z: 897, f: 270, id: "kisada.html"},
+  { x: 639, y: 220, z: 736, f: 294, id: "plan.html"},
+  { x: 57, y: 342, z: 152, f: 420, id: "muralla.html"},
+  { x: 195, y: 378, z: 291, f: 458, id: "general.html"},
+  { x: 57, y: 453, z: 152, f: 531, id: "catacumbas.html"},
+  { x: 195, y: 495, z: 291, f: 567, id: "trampas.html"},
+  { x: 57, y: 566, z: 152, f: 640, id: "salir.html"},
+  { x: 195, y: 606, z: 291, f: 680, id: "enemigo.html"},
+  { x: 68, y: 674, z: 132, f: 747, id: "detectado.html"},
+  { x: 412, y: 342, z: 504, f: 416, id: "alamuralla.html"},
+  { x: 543, y: 381, z: 642, f: 448, id: "manda.html"},
+  { x: 412, y: 458, z: 504, f: 531, id: "preparativo.html"},
+  { x: 543, y: 495, z: 640, f: 567, id: "carga.html"},
+  { x: 748, y: 342, z: 844, f: 414, id: "corte.html"},
+  { x: 892, y: 381, z: 984, f: 448, id: "sacar.html"},
+  { x: 748, y: 454, z: 844, f: 528, id: "catacumbas.html"},
+  { x: 892, y: 489, z: 984, f: 567, id: "trampas.html"},
+  { x: 748, y: 567, z: 844, f: 640, id: "barril.html"},
+  { x: 892, y: 608, z: 984, f: 681, id: "kage.html"},
+  { x: 748, y: 684, z: 844, f: 758, id: "caceria.html"},
+  { x: 892, y: 740, z: 984, f: 813, id: "alien.html"},
+  { x: 748, y: 806, z: 844, f: 870, id: "refugio.html"},
+  { x: 892, y: 850, z: 984, f: 922, id: "hacerhuir.html"},
+  { x: 1012, y: 652, z: 1077, f: 736, id: "asiko.html"},
+  { x: 300, y: 707, z: 641, f: 782, id: "batalla.html"},
+  { x: 421, y: 837, z: 522, f: 913, id: "final.html"}
+];
+$(document).ready( function() {
+  $("#dialog").dialog({
+    autoOpen: false,
+    resizable: false,
+    draggable: false,
+    width: 600,
+    height: 800
+  });
+  var index = -1;
+  while ( ++index != puntos.length ) {
+    $("#ayuda").append(
+      $("<area/>").attr( { id: puntos[index].id, shape: "rect", coords: puntos[index].x + "," + puntos[index].y + "," + puntos[index].z + "," + puntos[index].f, title: puntos[index].name, href: "#" } )
+    );
+  }
+  $("area").click( function() {
+    var href = "e3/";
+    href += $(this).attr( "id" );
+    $("#dialog iframe").attr( { src: href, width: "100%", height: "100%" } );
+    $("#dialog").dialog( { title: $(this).attr( "title" ) } );
+    $("#dialog").dialog( "open" );
+    return false;
+  });
+});
+</script>
+</head>
+<body>
+<div id="dialog" title="Ayuda de partida" align="center"overflow=hiiden><iframe></iframe></div>
+<img src="partida3.png" usemap="#uno"><br/>
+<map name="uno" id="ayuda" />
+<br/>
+</body>
+</html>
