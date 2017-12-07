@@ -12,7 +12,7 @@ Todo lo que aquí se contiene está bajo la licencia CC BY-NC-SA de Creativ Comm
 
 ## Lo primero es crear un diagrama para cada escena
 
-En el raíz de los ficheros tienes un archivo [.xml](./Espejito-espejito.xml) con los diagramas de cada escena, es un diagrama de flujo para adaptarse a los giros y cambios que la partida presente. Yo he usado una tool gratuita y online que está en [Draw.io] (https://www.draw.io/).
+En el raíz de los ficheros tienes un archivo [.xml](./Espejito-espejito.xml) con los diagramas de cada escena, es un diagrama de flujo para adaptarse a los giros y cambios que la partida presente. Yo he usado una tool gratuita y online que está en [Draw.io](https://www.draw.io/).
 
 Exporta cada diagrama como un PNG y almacenalo para usarlo en las futuras hojas como imagen de fondo.
 
@@ -50,6 +50,6 @@ Recuerda que hay algunas hojas que contienen una tabla para poder ver al mismo t
 
 5. **Por último solo tienes que editar la hoja menu.html**
 
-Edita la hoja [menu.html] (./menu.html) para que corresponda con tus escenas creadas y/o añadir mas material que necesites (mapas, ayudas, etc).
+Edita la hoja [menu.html](./menu.html) para que corresponda con tus escenas creadas y/o añadir mas material que necesites (mapas, ayudas, etc).
 
 6. **Disfruta de la partida con tus amigos**
