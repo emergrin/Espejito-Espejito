@@ -16,9 +16,9 @@ En el raíz de los ficheros tienes un archivo [.xml](./Espejito-espejito.xml) co
 
 Exporta cada diagrama como un PNG y almacenalo para usarlo en las futuras hojas como imagen de fondo.
 
-## Lo siguiente es crear una hoja html para cada escena
+## Lo segundo es crear una hoja html para cada escena
 
-Cada escena debe tener una entrada con una hoja html donde existen varios elementos importante:
+Cada escena debe tener una entrada con una hoja html donde existen varios elementos importantes:
 
 1. **La matriz de coordenadas en la variable puntos**
 ```
@@ -42,14 +42,14 @@ var href = "e1/";
 ```
 Usa la imagen de cada escena que has creado y ponla de fondo para la pagina designada
 
-4. **Crea la información necesaria para cada punto de los mapas con una hoja html**
+## Lo tercero crear la información necesaria para cada punto de los mapas con una hoja html
 
 Todo lo que tienes que hacer ahora es crear dentro del directorio apropiado una hoja html simple (editando el texto dentro del body con el formato html). Te recomiendo que uses la que ya existe en las escenas de esta partida.
 
 Recuerda que hay algunas hojas que contienen una tabla para poder ver al mismo tiempo una imagen, ficha o similar y el texto que quieras añadir.
 
-5. **Por último solo tienes que editar la hoja menu.html**
+## Por último solo tienes que editar la hoja menu.html
 
 Edita la hoja [menu.html](./menu.html) para que corresponda con tus escenas creadas y/o añadir mas material que necesites (mapas, ayudas, etc).
 
-6. **Disfruta de la partida con tus amigos**
+## Recuerda disfruta de la partida con tus amigos
